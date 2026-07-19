@@ -1,0 +1,62 @@
+# Using reshape()//       #Reshaping means changing the structure of an array without changing the data//             #array.reshape(rows, columns)//
+# import numpy as np
+# arr = np.array([1,2,3,4,5,6])
+# new_arr = arr.reshape(2,3)
+# print(new_arr)
+
+# Important Rule of Reshape//                         # Total elements must match//
+# import numpy as np
+# arr = np.arange(12)
+# new_arr = arr.reshape(3,4)
+# new_arr = arr.reshape(2,6)
+# # new_arr = arr.reshape(4,3)
+# print(new_arr)
+
+# Using -1 in Reshape//             NumPy automatically calculates one dimension//
+# import numpy as np
+# arr = np.arange(12)
+# print(arr.reshape(3,-1))
+
+# import numpy as np
+# sales = np.arange(12)
+# print(sales.reshape(4,3))
+
+# flatten()//               convert 2D data into 1D//
+# import numpy as np
+# arr = np.array([
+#     [1,2,3],
+#     [4,5,6]
+# ])
+# print(arr.flatten())
+
+# ravel()//             works similarly to flatten but better
+# import numpy as np
+# arr = np.array([
+#     [1,2,3],
+#     [4,5,6]
+# ])
+# print(arr.ravel())
+
+# Mathematical Operations//                         #ADDITION//
+# import numpy as np
+# sales = np.array([10000,15000,20000])
+# print(sales + 5000)
+# print(sales - 5000)                               #SUBTRACTION
+# print(sales * 5000)                               #MULTIPLICATION
+# print(sales / 5000)                               #DIVISION
+
+# Operations Between Arrays//
+# import numpy as np
+# salary = np.array([25000,30000,35000])
+# bonus = np.array([2000,3000,4000])
+# print(salary + bonus)
+
+# Aggregation Functions//
+# import numpy as np
+# sales = np.array([1000,2000,3000])
+# print(sales.sum())                    sum()//           # Find total//
+# print(sales.mean())                   mean()//            # Average value//
+# print(sales.min())
+# print(sales.max())
+# print(sales.std())                    std() – Standard Deviation//          # Shows spread of data//
+# print(sales.var())
